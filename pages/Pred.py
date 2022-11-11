@@ -4,7 +4,7 @@ import numpy as np
 from io import StringIO
 
 import sys
-sys.path.insert(1, 'C:/Users/PIEROL/Desktop/DeepLearningOp/Streamlit') 
+sys.path.insert(1, 'C:/Users/alyssa/OneDrive/Escritorio/Streamlit/Streamlit') 
 import CAD_DLOv1 as cad
 
 page_bg = """
