@@ -40,6 +40,20 @@ if sel is not '-':
     # Obtenemos la imagen del Drive
     im = D.get_radiog(id)/255.
     #st.image(im)
+    
+    ########### PRUEBA###########
+    #id_rnn = 1e_NB_bcwntKQrsuKWg8yUx_xpuySxtay ;
+    @st.experimental_memo
+    def dowload_data():
+        url = "https://drive.google.com/uc?id=1e_NB_bcwntKQrsuKWg8yUx_xpuySxtay";
+        output = 'Xception.h5';
+        red = gdown.download(url, output, quite=False);
+        return red
+    download_data()
+    
+    
+    ############################
+    
 
     model_path = 'Xception.h5'
     pred, gradcam = cad.DLO_predict(im, model_path)
